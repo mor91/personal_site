@@ -24,7 +24,7 @@ import random
 import numpy as np
 from six.moves import xrange  # pylint: disable=redefined-builtin
 import tensorflow as tf
-from tensorflow.python.ops.rnn import rnn_cell
+from tensorflow.contrib.rnn.python.ops import core_rnn_cell as rnn_cell
 
 import jsonl_data_utils
 
