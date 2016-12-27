@@ -94,14 +94,10 @@
                     <hr class="star-light">
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p>I am a software developer, I am interested in algorithms that make the computer learn like humans. I started with Image generation neural network and continued with NLP Deep Learning models</p>
-                </div>
-                <div class="col-lg-4">
-                    <p>I built an seq2seq based chatbot, and you can try speaking with him <a href="#chat" style="color:blue">here</a>. enjoy!</p>
-                    <p>you can learn more about my chatbot project <a href="#portfolioModal3" style="color:blue" data-toggle="modal">here</a></p>
-                </div>
+            <div class="row text-center">
+                    <p>I am a developer, interested at Artificial Intelligence and Natural language processing algorithms</p>
+                    <p>I built a chatbot using Tensorflow seq2seq, and you can speak with him here.</p>
+                    <p>You can learn more about my chatbot project on the project page <a href="https://github.com/mor91/personal_site" data-toggle="modal" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a></p>
 
             </div>
         </div>
@@ -183,7 +179,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="static/img/portfolio/digits_gen.png" class="img-responsive" alt="">
+                        <img src="static/img/portfolio/seq2seq.png" class="img-responsive" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -203,17 +199,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="static/img/portfolio/seq2seq.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="static/img/portfolio/word2vec.png" class="img-responsive" alt="">
+                        <img src="static/img/portfolio/digits_gen.png" class="img-responsive" alt="">
                     </a>
                 </div>
             </div>
@@ -268,14 +254,13 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>IMAGE GENERATION</h2>
+                            <h2>Redditor-Bot with Seq2seq</h2>
                             <hr class="star-light">
-                            <img src="static/img/portfolio/digits_gen.png" class="img-responsive img-centered" alt="">
-                            <p style="text-align: initial">This project includes three sub-projects:</p>
-                            <p style="text-align: initial">1. Deep Learning neural network to classify digits images, using tensorflow platform.</p>
-                            <p style="text-align: initial">2. Comparing the results of three models: linear neural network, 2 layers neural network and convolutional neural network.</p>
-                            <p style="text-align: initial">3. Image Generation model with GANs.</p>
-                            <a style="color:blue" href="https://github.com/mor91/generative_convs_test">the project on github</a>
+                            <img src="static/img/portfolio/seq2seq.png" class="img-responsive img-centered" alt="">
+                            <p style="text-align: initial">In this project I used the sequence to sequence framework to model reddit conversations created from the comments sections.</p>
+                            <p style="text-align: initial">I trained an attention based seq2seq model on roughly 20m exchanges between users.</p>
+                            <p style="text-align: initial">I prepared the reddit dataset using Google BigQuery.</p>
+                            <p style="text-align: initial"><a style="color:blue" href="https://github.com/mor91/personal_site">the project on github</a></p>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
@@ -295,13 +280,13 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>LANGUAGE MODEL</h2>
+                            <h2>Visualizing word embeddings</h2>
                             <hr class="star-light">
                             <img src="static/img/portfolio/tsne1.png" class="img-responsive img-centered" alt="">
-                            <p style="text-align: initial">In this project I bulit a recurrent neural network to language model. the model knows the previous words of a sentence and predicts the next word.</p>
-                            <p style="text-align: initial">the model based on LSTM (Long Short-Term Memory) </p>
-                            <p style="text-align: initial">this model uses the Penn Tree Bank (PTB) dataset</p>
-                            <a style="color:blue" href="https://github.com/mor91/language_model">the project on github</a>
+                            <p style="text-align: initial">In this project I trained a recurrent neural network language model on the Penn Tree Bank dataset. A language model is a model that tries to predict a word given the preceding words.</p>
+                            <p style="text-align: initial">After the training is done I visualized the created word representations using Tensorflow new embedding visualizer tool with t-SNE.</p>
+                            <p style="text-align: initial">The model is a Long Short-Term Memory network</p>
+                            <p style="text-align: initial"><a style="color:blue" href="https://github.com/mor91/language_model">the project on github</a></p>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
@@ -321,48 +306,14 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>CHATBOT</h2>
+                            <h2>IMAGE GENERATION</h2>
                             <hr class="star-light">
-                            <img src="static/img/portfolio/seq2seq.png" class="img-responsive img-centered" alt="">
-                            <p style="text-align: initial">This model generate response output sentence to an input sentence. the model based on RNN neural network.</p>
-                            <p style="text-align: initial">The model train on Reddit 2015 data</p>
+                            <img src="static/img/portfolio/digits_gen.png" class="img-responsive img-centered" alt="">
+                            <p style="text-align: initial">Using the recently proposed Generative Adversarial Networks framework I generated MNIST images. The GAN framework consists of a generator and discriminator, the generator generates images from random vectors and the discriminator tried to discriminate between real samples and generated samples.</p>
+                            <p style="text-align: initial">Also, I compared convolutional architectures to fully-connected and linear ones.</p>
+                            <p style="text-align: initial"><a style="color:blue" href="https://github.com/mor91/generative_convs_test">the project on github</a></p>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>WORD2VEC</h2>
-                            <hr class="star-light">
-                            <img src="static/img/portfolio/word2vec.png" class="img-responsive img-centered" alt="">
-                            <p style="text-align: initial">word embeddings neural network</p>
-                            <p style="text-align: initial">This model builds vector representation of words.</p>
-                            <a style="color:blue" href="https://github.com/mor91/word2vec">the project on github</a>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
                     </div>
                 </div>
             </div>
