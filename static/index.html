@@ -138,13 +138,15 @@
                     <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
                     <script>
                         $('form').submit(function(){
-                        $('#messages').append($('<li>').text($('#m').val()));
+                        $('.messages').append($('<li>').text($('#m').val()));
+                        $(".messages").scrollTop($(".messages")[0].scrollHeight);
                         $.getJSON('/talk', {
                             userInput: $('#m').val(),
                               }, function(data) {
-                              $('#messages').append($('<li>').text(
+                              $('.messages').append($('<li>').text(
                                 data.result
                                 ));
+                                $(".messages").scrollTop($(".messages")[0].scrollHeight);
                               });
                         $('#m').val('');
                         return false;
